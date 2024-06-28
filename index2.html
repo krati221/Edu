@@ -927,7 +927,10 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <a href="<script>
+  <a href="" id="chatBotButton" class="chat-bot-button d-flex align-items-center justify-content-center">
+    <i class="fa-brands fa-rocketchat"></i>
+</a>
+<script>
   window.watsonAssistantChatOptions = {
     integrationID: "7b0a2980-a5bc-4b33-b4ba-a53b90645445", // The ID of this integration.
     region: "au-syd", // The region your integration is hosted in.
@@ -939,10 +942,7 @@
     t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
     document.head.appendChild(t);
   });
-</script>" id="chatBotButton" class="chat-bot-button d-flex align-items-center justify-content-center">
-    <i class="fa-brands fa-rocketchat"></i>
-</a>
-
+</script>
 
 
   <!-- Preloader -->
