@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('assets/img/loginimg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: backgroundAnimation 20s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-size: 100%; }
+            50% { background-size: 110%; }
+            100% { background-size: 100%; }
+        }
+
+        .card {
+            width: 100%;
+            max-width: 400px; /* Set maximum width of the card */
+            background: url('assets/img/formlogo.jpg'); /* Set the form background image */
+            background-size: cover; /* Cover the entire card area */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+            background-position: center; /* Center the background image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background: rgba(255, 255, 255, 0.8); /* Make header background semi-transparent */
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold; /* Corrected from "font-width" to "font-weight" */
+        }
+        .card-body {
+            background: rgba(255, 255, 255, 0.8); /* Make body background semi-transparent */
+        }
+        @media (min-width: 576px) {
+            .card {
+                max-width: 600px; /* Increase the max-width for small devices (576px and up) */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header" style="text-align:center; font-size:40px; ">EcoFlux+</div>
+                    <div class="card-body">
+                        <!-- <form method="" action=""> -->
+                            <div class="form-group">
+                                <label for="username" style="text-align:center; font-size:20px; "><b>Username:</b></label>
+                                <input type="text" class="form-control" id="username" name="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" style="text-align:center; font-size:20px; "><b>Password:</b></label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                            <a href="index2.html"> <button type="" class="btn btn-primary">Login</button></a>
+                           
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
